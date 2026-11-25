@@ -35,10 +35,6 @@
     <Project Path="TokenSaver.Host/TokenSaver.MCP.Tests/TokenSaver.MCP.Tests.csproj" />
     <Project Path="TokenSaver.Host/TokenSaver.MCP/TokenSaver.MCP.csproj" />
   </Folder>
-  <Folder Name="/TokenSaver.Tooling/">
-    <Project Path="TokenSaver.Tooling/TokenSaver.Vs.Extension.Tests/TokenSaver.Vs.Extension.Tests.csproj" />
-    <Project Path="TokenSaver.Tooling/TokenSaver.Vs.Extension/TokenSaver.Vs.Extension.csproj" />
-  </Folder>
   <Folder Name="/TokenSaver.SimpleModelServer/">
     <Project Path="TokenSaver.SimpleModelServer/src/Common/SimpleModelServer.Common.Tests/SimpleModelServer.Common.Tests.csproj" />
     <Project Path="TokenSaver.SimpleModelServer/src/Common/SimpleModelServer.Common/SimpleModelServer.Common.csproj" />
