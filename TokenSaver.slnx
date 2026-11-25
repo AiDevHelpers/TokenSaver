@@ -39,4 +39,29 @@
     <Project Path="TokenSaver.ToolingTokenSaver.Vs.Extension.TestsTokenSaver.Vs.Extension.Tests.csproj" />
     <Project Path="TokenSaver.ToolingTokenSaver.Vs.ExtensionTokenSaver.Vs.Extension.csproj" />
   </Folder>
+  <Folder Name="/TokenSaver.SimpleModelServer/">
+    <Project Path="TokenSaver.SimpleModelServersrcCommonSimpleModelServer.Common.TestsSimpleModelServer.Common.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcCommonSimpleModelServer.CommonSimpleModelServer.Common.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcCommonSimpleModelServer.Discovery.TestsSimpleModelServer.Discovery.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcCommonSimpleModelServer.DiscoverySimpleModelServer.Discovery.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcConfigSimpleModelServer.Config.TestsSimpleModelServer.Config.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcConfigSimpleModelServer.ConfigSimpleModelServer.Config.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcContractsSimpleModelServer.Contracts.TestsSimpleModelServer.Contracts.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcContractsSimpleModelServer.ContractsSimpleModelServer.Contracts.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcEvalsSimpleModelServer.Evals.TestsSimpleModelServer.Evals.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcEvalsSimpleModelServer.EvalsSimpleModelServer.Evals.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcHardwareSimpleModelServer.Hardware.TestsSimpleModelServer.Hardware.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcHardwareSimpleModelServer.HardwareSimpleModelServer.Hardware.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcMCPSimpleModelServer.Mcp.TestsSimpleModelServer.Mcp.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcMCPSimpleModelServer.McpSimpleModelServer.Mcp.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcProvidersSimpleModelServer.Providers.CommonSimpleModelServer.Providers.Common.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcProvidersSimpleModelServer.Providers.LMStudioSimpleModelServer.Providers.LMStudio.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcProvidersSimpleModelServer.Providers.OllamaSimpleModelServer.Providers.Ollama.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcProvidersSimpleModelServer.Providers.TestsSimpleModelServer.Providers.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcServerSimpleModelServer.Server.TestsSimpleModelServer.Server.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcServerSimpleModelServer.ServerSimpleModelServer.Server.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcUISimpleModelServer.UI.TestsSimpleModelServer.UI.Tests.csproj" />
+    <Project Path="TokenSaver.SimpleModelServersrcUISimpleModelServer.UISimpleModelServer.UI.csproj" />
+    <Project Path="TokenSaver.SimpleModelServertestsquality-checkcompile-testcompile-test.csproj" />
+  </Folder>
 </Solution>

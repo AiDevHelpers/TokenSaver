@@ -19,3 +19,6 @@
 [submodule "TokenSaver.Docs"]
 	path = TokenSaver.Docs
 	url = https://github.com/AiDevHelpers/TokenSaver.Docs.git
+[submodule "TokenSaver.SimpleModelServer"]
+	path = TokenSaver.SimpleModelServer
+	url = https://github.com/AiDevHelpers/SimpleModelServer.git
