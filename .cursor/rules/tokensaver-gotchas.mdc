@@ -1,0 +1,24 @@
+<!-- tokensaver:global-instructions:start (auto-synced from %USERPROFILE%\.claude\CLAUDE.md — edit the source there, not here) -->
+---
+alwaysApply: false
+---
+
+## Gotchas
+
+- **Transport auto-detection** (`Program.cs` top): the server adds stdio transport only when
+  `Console.IsInputRedirected` is true, *not* a Windows Service, and `TOKENSAVER_HTTP_ONLY != "1"`.
+  Both the VS Code extension and the SCM launch with a redirected/absent stdin that would
+  false-positive as stdio, read immediate EOF, and shut the server down — hence the explicit
+  guards. The extension sets `TOKENSAVER_HTTP_ONLY=1`; the SCM is forced HTTP-only unconditionally.
+  In stdio mode stdout is the protocol channel, so it's redirected to stderr.
+- **Build output is redirected**: `Directory.Build.props` routes every .NET project's bin/obj into
+  `build/staging/<ProjectName>/` (not per-project folders). `.esproj` is excluded. Don't look for
+  `bin/obj` under project dirs.
+- **WiX build race**: `TokenSaver.slnx` carries explicit `BuildDependency` ordering on
+  `VsCodeExt.esproj` and `TokenSaver.Setup.wixproj` to prevent concurrent nested `dotnet publish`
+  of `TokenSaver.MCP` into a shared obj folder (surfaces as MSB4018 missing `.deps.json` or CS0006
+  missing metadata file). Preserve that ordering if editing the solution.
+- A transitive `SQLitePCLRaw.lib.e_sqlite3` advisory (NU1903 / GHSA-2m69-gcr7-jv3q) is suppressed
+  in `Directory.Build.props` — it's never loaded at runtime (we use `bundle_winsqlite3`). Remove
+  the suppression once a patched version ships.
+<!-- tokensaver:global-instructions:end -->

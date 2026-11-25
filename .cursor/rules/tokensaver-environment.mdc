@@ -1,0 +1,21 @@
+<!-- tokensaver:global-instructions:start (auto-synced from %USERPROFILE%\.claude\CLAUDE.md — edit the source there, not here) -->
+---
+alwaysApply: false
+---
+
+## Environment
+
+When working from a cloud/remote Claude session with the desktop device bridge connected (device
+`dragonfire`), `mcp__remote-devices__Windows-MCP__PowerShell` (and the rest of the Windows-MCP
+tool family — `Process`, `App`, `FileSystem`, etc.) runs commands directly on the user's Windows
+machine. **Use it to actually run commands** instead of asking the user to run them and report back
+— this repo has no .NET SDK in the cloud container, but the user's machine does. Load the tool via
+`ToolSearch` if it's deferred (`select:mcp__remote-devices__Windows-MCP__PowerShell`).
+
+Build/test/versioning and packaging guidance live in `.claude/rules/` (`commands.md`,
+`packaging.md`) as path-scoped rules — they load automatically only when you touch the relevant
+project, test, script, or installer files, so they stay out of context otherwise.
+
+Subagent model default (haiku, retry once on sonnet if a result looks confused/wrong) lives in
+global `~/.claude/CLAUDE.md` -- applies here too, no repo-local override needed.
+<!-- tokensaver:global-instructions:end -->

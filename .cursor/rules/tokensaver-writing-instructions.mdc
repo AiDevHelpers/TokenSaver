@@ -1,0 +1,51 @@
+<!-- tokensaver:global-instructions:start (auto-synced from %USERPROFILE%\.claude\CLAUDE.md — edit the source there, not here) -->
+---
+globs:
+  - "**/CLAUDE.md"
+  - "**/CLAUDE.local.md"
+  - "**/AGENTS.md"
+  - "**/.claude/rules/**/*.md"
+alwaysApply: false
+---
+
+# Writing instructions: make them lazy-load
+
+Default rule: **always make instructions lazy-load whenever possible.** Always-loaded
+instruction files (CLAUDE.md, CLAUDE.local.md) are read in full at the start of *every*
+session and cost context tokens even when irrelevant. Keep those files short and push detail
+into mechanisms that load only when needed.
+
+## What actually defers loading (and what does not)
+
+- **Path-scoped rules** (`.claude/rules/*.md` with `paths:` frontmatter) — load only when
+  Claude reads a file matching the glob. This is the primary lazy-load tool. This very file
+  is an example.
+- **Skills** — load only when invoked or when Claude judges them relevant to the prompt. Use
+  for multi-step procedures and repeatable workflows.
+- **On-demand file reads** — reference a doc by path in backticks (e.g. `docs/packaging.md`)
+  so Claude reads it only when the task calls for it.
+- **Does NOT defer:** `@path` imports and plain CLAUDE.md content — both load at launch
+  regardless of length. Splitting into imports organizes but saves no context.
+
+## How to decide
+
+- Applies to one file type / subtree, or is a procedure → **path-scoped rule** or **skill**.
+- A fact needed in literally every session (build command, core convention) → keep it in the
+  always-loaded CLAUDE.md, stated in one line.
+- Long reference material a task occasionally needs → separate doc, linked by backticked path.
+
+## Language
+
+Write terse. Communicate every needed fact, no fluff. Drop filler, hedging, and restating the
+obvious. Prefer imperatives and short declaratives. Fewer words that carry information beat more
+words that don't.
+
+## When writing or editing any instruction file
+
+1. Ask: does this need to be in context every session? If not, it does not belong in an
+   always-loaded file.
+2. Move conditional or bulky guidance into a path-scoped rule, a skill, or an on-demand doc.
+3. Keep each CLAUDE.md focused and ideally under ~200 lines.
+4. After editing, read the whole file back and verify it follows these rules (lazy-load,
+   terse, no conflicts). Fix it in the same change if not.
+<!-- tokensaver:global-instructions:end -->
