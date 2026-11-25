@@ -1,0 +1,21 @@
+[submodule "TokenSaver.Common"]
+	path = TokenSaver.Common
+	url = https://github.com/AiDevHelpers/TokenSaver.Common.git
+[submodule "TokenSaver.Database"]
+	path = TokenSaver.Database
+	url = https://github.com/AiDevHelpers/TokenSaver.Database.git
+[submodule "TokenSaver.Core"]
+	path = TokenSaver.Core
+	url = https://github.com/AiDevHelpers/TokenSaver.Core.git
+[submodule "TokenSaver.Host"]
+	path = TokenSaver.Host
+	url = https://github.com/AiDevHelpers/TokenSaver.Host.git
+[submodule "TokenSaver.Installers"]
+	path = TokenSaver.Installers
+	url = https://github.com/AiDevHelpers/TokenSaver.Installers.git
+[submodule "TokenSaver.Tooling"]
+	path = TokenSaver.Tooling
+	url = https://github.com/AiDevHelpers/TokenSaver.Tooling.git
+[submodule "TokenSaver.Docs"]
+	path = TokenSaver.Docs
+	url = https://github.com/AiDevHelpers/TokenSaver.Docs.git

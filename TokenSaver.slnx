@@ -1,0 +1,42 @@
+<Solution>
+  <Folder Name="/TokenSaver.Common/">
+    <Project Path="TokenSaver.CommonTokenSaver.Common.ContractsTokenSaver.Common.Contracts.csproj" />
+    <Project Path="TokenSaver.CommonTokenSaver.Common.CoreTokenSaver.Common.Core.csproj" />
+    <Project Path="TokenSaver.CommonTokenSaver.Common.InstallationTokenSaver.Common.Installation.csproj" />
+    <Project Path="TokenSaver.CommonTokenSaver.Common.ModelsTokenSaver.Common.Models.csproj" />
+    <Project Path="TokenSaver.CommonTokenSaver.ContextHelperTokenSaver.ContextHelper.csproj" />
+  </Folder>
+  <Folder Name="/TokenSaver.Database/">
+    <Project Path="TokenSaver.DatabaseTokenSaver.Database.ContextTokenSaver.Database.Context.csproj" />
+  </Folder>
+  <Folder Name="/TokenSaver.Core/">
+    <Project Path="TokenSaver.CoreTokenSaver.Client.Helpers.TestsTokenSaver.Client.Helpers.Tests.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.Client.HelpersTokenSaver.Client.Helpers.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.CodeHelper.TestsTokenSaver.CodeHelper.Tests.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.CodeHelperTokenSaver.CodeHelper.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.Config.TestsTokenSaver.Config.Tests.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.ConfigTokenSaver.Config.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.DocsTokenSaver.Docs.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.LanguageHelpers.CSharpTokenSaver.LanguageHelpers.CSharp.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.LanguageHelpers.CoreTokenSaver.LanguageHelpers.Core.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.LanguageHelpers.PowerShellTokenSaver.LanguageHelpers.PowerShell.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.LanguageHelpers.PythonTokenSaver.LanguageHelpers.Python.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.OllamaIntegration.TestsTokenSaver.OllamaIntegration.Tests.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.OllamaIntegrationTokenSaver.OllamaIntegration.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.TokenEconomy.TestsTokenSaver.TokenEconomy.Tests.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.TokenEconomyTokenSaver.TokenEconomy.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.Utilities.TestsTokenSaver.Utilities.Tests.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.UtilitiesTokenSaver.Utilities.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.WindowsSessionTokenSaver.WindowsSession.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.WslControl.TestsTokenSaver.WslControl.Tests.csproj" />
+    <Project Path="TokenSaver.CoreTokenSaver.WslControlTokenSaver.WslControl.csproj" />
+  </Folder>
+  <Folder Name="/TokenSaver.Host/">
+    <Project Path="TokenSaver.HostTokenSaver.MCP.TestsTokenSaver.MCP.Tests.csproj" />
+    <Project Path="TokenSaver.HostTokenSaver.MCPTokenSaver.MCP.csproj" />
+  </Folder>
+  <Folder Name="/TokenSaver.Tooling/">
+    <Project Path="TokenSaver.ToolingTokenSaver.Vs.Extension.TestsTokenSaver.Vs.Extension.Tests.csproj" />
+    <Project Path="TokenSaver.ToolingTokenSaver.Vs.ExtensionTokenSaver.Vs.Extension.csproj" />
+  </Folder>
+</Solution>
